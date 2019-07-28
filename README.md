@@ -23,5 +23,5 @@ There is a task which will be triggered at 12:00 am(UTC) time
 - There is a notebook in which weighted price prediction model is developed by **ARIMA**
 
 - It can be the architectural view of Business Intelligence and anamoly detection pipeline
-  ![alt diagram](https://drive.google.com/file/d/1dq5JOFulKN58hTOHr1PZFZ0yJTaC46Ki/view?usp=sharing)
+  ![alt diagram](https://github.com/shourav9884/tele-test/raw/master/static/img/Untitled%20Diagram.jpg)
  

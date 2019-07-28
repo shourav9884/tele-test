@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ca860bc-fa95-41e7-b2af-91f087e2f8a2" name="Default Changelist" comment="" />
+    <list default="true" id="1ca860bc-fa95-41e7-b2af-91f087e2f8a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/img/Untitled Diagram.jpg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,15 +122,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tele/routes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/warehouse/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1045">
@@ -186,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+              <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -359,18 +352,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/img" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/bitcoin/management" />
       <recent name="$PROJECT_DIR$/bitcoin" />
-      <recent name="$PROJECT_DIR$/tele" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -423,21 +416,21 @@
       <updated>1563806639968</updated>
       <workItem from="1563806643822" duration="32900000" />
       <workItem from="1564146147584" duration="12147000" />
-      <workItem from="1564300811228" duration="202000" />
+      <workItem from="1564300811228" duration="439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45249000" />
+    <option name="totallyTimeSpent" value="45486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22222222" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22222222" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.44059977" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.44059977" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Database Console" order="4" weight="0.50980395" />
@@ -595,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="55" column="19" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitstampUSD_1-min_data_2012-01-01_to_2019-03-13.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state>
-          <caret selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -864,10 +850,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bitstampUSD_1-min_data_2012-01-01_to_2019-03-13.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
