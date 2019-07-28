@@ -1,6 +1,8 @@
-Firstly activate the virtualenv
+Firstly make a virtual environment, activate the virtualenv and install the requirements
 ```
+virtualenv -p python3
 source venv/bin/activate
+pip install -r requirements.txt
 ```
 then migrate the models
 ```
@@ -18,7 +20,11 @@ celery -A tele worker -l info
 ```
 There is a task which will be triggered at 12:00 am(UTC) time
 
-- There is also a web server which serves dashboard which contains yearly, monthly, daily data
+- There is also a web server which serves dashboard which contains yearly, monthly, daily data. To run the server:
+```
+python manage.py runserver
+```
+
 
 - There is a notebook in which weighted price prediction model is developed by **ARIMA**
 
