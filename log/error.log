@@ -1,0 +1,226 @@
+ERROR 2019-07-26 10:45:13,219 <ipython-input-4-56660894b009> <module> <ipython-input-4-56660894b009> 00000
+ERROR 2019-07-26 10:46:06,459 tasks.py import_day_data tasks error in import_day_data for day: 1, at:2019-07-26 10:46:06.459217+00:00
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/warehouse/tasks.py", line 27, in import_day_data
+    year=day.year,
+AttributeError: 'int' object has no attribute 'year'
+ERROR 2019-07-26 10:49:29,882 tasks.py import_day_data tasks error in import_day_data for day: 2019-07-26 10:49:27.640399+00:00, at:2019-07-26 10:49:29.882513+00:00
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/warehouse/tasks.py", line 100, in import_day_data
+    i = 1/0
+ZeroDivisionError: division by zero
+ERROR 2019-07-26 15:32:31,042 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 5, in dashboard
+    return render(request, 'dashboard.html', {})
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2019-07-26 15:32:41,295 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 117317
+ERROR 2019-07-27 07:01:46,558 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 166, in ensure_defaults
+    conn = self.databases[alias]
+KeyError: 'warehouse_db'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 39, in dashboard
+    return render(request, 'dashboard.html', locals())
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/query.py", line 52, in __iter__
+    compiler = queryset.query.get_compiler(using=db)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 288, in get_compiler
+    connection = connections[using]
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 198, in __getitem__
+    self.ensure_defaults(alias)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 168, in ensure_defaults
+    raise ConnectionDoesNotExist("The connection %s doesn't exist" % alias)
+django.db.utils.ConnectionDoesNotExist: The connection warehouse_db doesn't exist
+ERROR 2019-07-27 07:02:04,074 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 165261
+ERROR 2019-07-27 07:40:26,966 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "btc_timestamp" does not exist
+LINE 1: ...weighted_price)/2),extract(year from to_timestamp(btc_timest...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 46, in dashboard
+    cursor.execute("select avg((max_weighted_price+min_weighted_price)/2),extract(year from to_timestamp(btc_timestamp)) as year from warehouse_db.public.warehouse_reportbymonth group by year");
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: column "btc_timestamp" does not exist
+LINE 1: ...weighted_price)/2),extract(year from to_timestamp(btc_timest...
+                                                             ^
+
+ERROR 2019-07-27 07:40:35,509 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 105389
+ERROR 2019-07-27 07:41:39,919 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 46, in dashboard
+    cursor.execute("select avg((max_weighted_price+min_weighted_price)/2),extract(year from to_timestamp(month_start_time)) as year from warehouse_reportbymonth order by year group by year");
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+ERROR 2019-07-27 07:41:44,128 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 46, in dashboard
+    cursor.execute("select avg((max_weighted_price+min_weighted_price)/2),extract(year from to_timestamp(month_start_time)) as year from warehouse_reportbymonth order by year group by year");
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+ERROR 2019-07-27 07:41:48,469 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 105311
+ERROR 2019-07-27 07:41:56,922 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 105311

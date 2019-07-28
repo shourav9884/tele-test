@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <!--
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                -->
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Daily Overview</h6>
+                    <div class="dropdown no-arrow">
+                        <small>{{ daily_data_from_time }}-{{ daily_data_to_time }}</small>
+
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="dailyAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Monthly Overview</h6>
+                    <div class="dropdown no-arrow">
+                        <small>{{ monthly_data_from_time }}-{{ monthly_data_to_time }}</small>
+
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="monthlyAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Yearly Overview</h6>
+                    <div class="dropdown no-arrow">
+                        <small>2011-2019</small>
+
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="yearlyAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block page_scripts %}
+    <script type="text/javascript">
+        var monthly_x_axis_data = [];
+        var monthly_data = [];
+        {% for mon_data in monthly_data %}
+            monthly_x_axis_data.push('{{ mon_data.start_time }}');
+            monthly_data.push({{ mon_data.avg_price }});
+        {% endfor %}
+
+        var daily_x_axis_data = [];
+        var daily_data = [];
+        {% for day_data in daily_data %}
+            daily_x_axis_data.push('{{ day_data.start_time }}');
+            daily_data.push({{ day_data.avg_price }});
+        {% endfor %}
+
+        var yearly_x_axis_data = [];
+        var yearly_data = [];
+        {% for d in yearly_data %}
+            yearly_x_axis_data.push({{ d.1 }});
+            yearly_data.push({{ d.0 }});
+        {% endfor %}
+
+        drawLineChart("yearlyAreaChart", "", yearly_x_axis_data, yearly_data);
+        drawLineChart("monthlyAreaChart", "", monthly_x_axis_data, monthly_data);
+        drawLineChart("dailyAreaChart", "", daily_x_axis_data, daily_data);
+    </script>
+{% endblock %}

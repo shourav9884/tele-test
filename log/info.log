@@ -1,0 +1,410 @@
+ERROR 2019-07-26 10:45:13,219 <ipython-input-4-56660894b009> <module> <ipython-input-4-56660894b009> 00000
+ERROR 2019-07-26 10:46:06,459 tasks.py import_day_data tasks error in import_day_data for day: 1, at:2019-07-26 10:46:06.459217+00:00
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/warehouse/tasks.py", line 27, in import_day_data
+    year=day.year,
+AttributeError: 'int' object has no attribute 'year'
+ERROR 2019-07-26 10:49:29,882 tasks.py import_day_data tasks error in import_day_data for day: 2019-07-26 10:49:27.640399+00:00, at:2019-07-26 10:49:29.882513+00:00
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/warehouse/tasks.py", line 100, in import_day_data
+    i = 1/0
+ZeroDivisionError: division by zero
+INFO 2019-07-26 15:32:14,414 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+WARNING 2019-07-26 15:32:19,272 log.py log_response log Not Found: /
+WARNING 2019-07-26 15:32:19,275 basehttp.py log_message basehttp "GET / HTTP/1.1" 404 2095
+WARNING 2019-07-26 15:32:22,724 log.py log_response log Not Found: /favicon.ico
+WARNING 2019-07-26 15:32:22,725 basehttp.py log_message basehttp "GET /favicon.ico HTTP/1.1" 404 2146
+ERROR 2019-07-26 15:32:31,042 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 5, in dashboard
+    return render(request, 'dashboard.html', {})
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2019-07-26 15:32:41,295 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 117317
+INFO 2019-07-26 15:34:01,583 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/tele/settings.py changed, reloading.
+INFO 2019-07-26 15:34:03,526 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-26 15:34:06,177 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 30776
+WARNING 2019-07-26 15:34:06,239 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 1741
+WARNING 2019-07-26 15:34:06,248 basehttp.py log_message basehttp "GET /static/css/sb-admin-2.min.css HTTP/1.1" 404 1690
+WARNING 2019-07-26 15:34:06,581 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 404 1747
+WARNING 2019-07-26 15:34:06,593 basehttp.py log_message basehttp "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 404 1705
+WARNING 2019-07-26 15:34:06,597 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 404 1684
+WARNING 2019-07-26 15:34:06,598 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1753
+WARNING 2019-07-26 15:34:06,604 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1708
+WARNING 2019-07-26 15:34:06,608 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 404 1702
+WARNING 2019-07-26 15:34:06,612 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 404 1699
+WARNING 2019-07-26 15:34:06,617 log.py log_response log Not Found: /dashboard/img/undraw_posting_photo.svg
+WARNING 2019-07-26 15:34:06,618 basehttp.py log_message basehttp "GET /dashboard/img/undraw_posting_photo.svg HTTP/1.1" 404 2227
+WARNING 2019-07-26 15:34:06,919 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 404 1747
+WARNING 2019-07-26 15:34:06,944 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 404 1684
+WARNING 2019-07-26 15:34:06,952 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1708
+WARNING 2019-07-26 15:34:06,961 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 404 1702
+WARNING 2019-07-26 15:34:06,971 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 404 1699
+INFO 2019-07-26 15:34:23,532 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 30776
+WARNING 2019-07-26 15:34:23,585 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 1741
+WARNING 2019-07-26 15:34:23,599 basehttp.py log_message basehttp "GET /static/css/sb-admin-2.min.css HTTP/1.1" 404 1690
+WARNING 2019-07-26 15:34:23,897 basehttp.py log_message basehttp "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 404 1705
+WARNING 2019-07-26 15:34:23,900 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1753
+WARNING 2019-07-26 15:34:23,912 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 404 1747
+WARNING 2019-07-26 15:34:23,913 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 404 1702
+WARNING 2019-07-26 15:34:23,913 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 404 1684
+WARNING 2019-07-26 15:34:23,914 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1708
+WARNING 2019-07-26 15:34:23,919 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 404 1699
+WARNING 2019-07-26 15:34:23,927 log.py log_response log Not Found: /dashboard/img/undraw_posting_photo.svg
+WARNING 2019-07-26 15:34:23,928 basehttp.py log_message basehttp "GET /dashboard/img/undraw_posting_photo.svg HTTP/1.1" 404 2227
+WARNING 2019-07-26 15:34:23,949 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 404 1702
+WARNING 2019-07-26 15:34:23,968 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 404 1699
+INFO 2019-07-26 15:34:27,003 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 30776
+WARNING 2019-07-26 15:34:27,038 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 1741
+WARNING 2019-07-26 15:34:27,050 basehttp.py log_message basehttp "GET /static/css/sb-admin-2.min.css HTTP/1.1" 404 1690
+WARNING 2019-07-26 15:34:27,140 basehttp.py log_message basehttp "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 404 1705
+WARNING 2019-07-26 15:34:27,151 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1753
+WARNING 2019-07-26 15:34:27,161 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 404 1747
+WARNING 2019-07-26 15:34:27,190 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 404 1702
+WARNING 2019-07-26 15:34:27,200 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1708
+WARNING 2019-07-26 15:34:27,210 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 404 1684
+WARNING 2019-07-26 15:34:27,213 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 404 1699
+WARNING 2019-07-26 15:34:27,215 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1753
+WARNING 2019-07-26 15:34:27,218 log.py log_response log Not Found: /dashboard/img/undraw_posting_photo.svg
+WARNING 2019-07-26 15:34:27,219 basehttp.py log_message basehttp "GET /dashboard/img/undraw_posting_photo.svg HTTP/1.1" 404 2227
+WARNING 2019-07-26 15:34:27,248 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 404 1747
+WARNING 2019-07-26 15:34:27,269 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 404 1684
+WARNING 2019-07-26 15:34:27,287 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1708
+WARNING 2019-07-26 15:34:27,300 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 404 1702
+WARNING 2019-07-26 15:34:27,309 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 404 1699
+INFO 2019-07-26 15:35:27,975 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/tele/settings.py changed, reloading.
+INFO 2019-07-26 15:35:29,141 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:14:21,095 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 30776
+INFO 2019-07-27 06:14:21,321 basehttp.py log_message basehttp "GET /static/css/sb-admin-2.min.css HTTP/1.1" 200 197981
+INFO 2019-07-27 06:14:21,411 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 55967
+INFO 2019-07-27 06:14:21,784 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 200 1106
+INFO 2019-07-27 06:14:21,784 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 200 2532
+INFO 2019-07-27 06:14:21,786 basehttp.py log_message basehttp "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2019-07-27 06:14:21,787 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 200 3569
+INFO 2019-07-27 06:14:21,788 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78635
+INFO 2019-07-27 06:14:21,789 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 200 156721
+INFO 2019-07-27 06:14:21,797 basehttp.py log_message basehttp "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 200 1057
+WARNING 2019-07-27 06:14:21,813 log.py log_response log Not Found: /dashboard/img/undraw_posting_photo.svg
+WARNING 2019-07-27 06:14:21,814 basehttp.py log_message basehttp "GET /dashboard/img/undraw_posting_photo.svg HTTP/1.1" 404 2227
+INFO 2019-07-27 06:14:23,378 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 75440
+INFO 2019-07-27 06:27:27,626 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 15536
+INFO 2019-07-27 06:28:03,845 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 13955
+INFO 2019-07-27 06:29:19,550 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7828
+INFO 2019-07-27 06:29:43,266 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 6261
+INFO 2019-07-27 06:30:24,894 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 4263
+INFO 2019-07-27 06:31:20,983 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 4113
+INFO 2019-07-27 06:31:25,497 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 4113
+INFO 2019-07-27 06:33:34,688 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 4471
+INFO 2019-07-27 06:37:29,907 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 6621
+INFO 2019-07-27 06:37:40,288 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311949
+INFO 2019-07-27 06:38:20,114 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 6621
+INFO 2019-07-27 06:38:20,235 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 200 1106
+INFO 2019-07-27 06:38:20,239 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 200 2532
+INFO 2019-07-27 06:38:20,245 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 55967
+INFO 2019-07-27 06:38:20,249 basehttp.py log_message basehttp "GET /static/css/sb-admin-2.min.css HTTP/1.1" 200 197981
+INFO 2019-07-27 06:38:20,252 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78635
+INFO 2019-07-27 06:38:20,252 basehttp.py log_message basehttp "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2019-07-27 06:38:20,259 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 200 156721
+INFO 2019-07-27 06:38:20,260 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 200 4515
+INFO 2019-07-27 06:38:20,859 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 75440
+WARNING 2019-07-27 06:38:21,624 log.py log_response log Not Found: /favicon.ico
+WARNING 2019-07-27 06:38:21,625 basehttp.py log_message basehttp "GET /favicon.ico HTTP/1.1" 404 2146
+INFO 2019-07-27 06:39:13,868 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 06:39:16,689 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:42:21,558 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 06:42:26,089 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:43:07,291 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 06:43:08,807 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:43:14,998 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 06:43:16,424 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:44:55,817 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 06:44:58,899 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:48:59,008 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 06:49:01,926 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:51:48,821 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 06:51:50,494 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:52:56,256 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 06:52:57,877 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:54:53,105 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 06:54:57,515 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:56:01,005 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 06:56:02,160 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:57:18,819 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 06:57:20,880 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 06:59:00,696 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 06:59:03,018 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+ERROR 2019-07-27 07:01:46,558 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 166, in ensure_defaults
+    conn = self.databases[alias]
+KeyError: 'warehouse_db'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 39, in dashboard
+    return render(request, 'dashboard.html', locals())
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/query.py", line 52, in __iter__
+    compiler = queryset.query.get_compiler(using=db)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 288, in get_compiler
+    connection = connections[using]
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 198, in __getitem__
+    self.ensure_defaults(alias)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 168, in ensure_defaults
+    raise ConnectionDoesNotExist("The connection %s doesn't exist" % alias)
+django.db.utils.ConnectionDoesNotExist: The connection warehouse_db doesn't exist
+ERROR 2019-07-27 07:02:04,074 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 165261
+WARNING 2019-07-27 07:02:14,213 log.py log_response log Not Found: /favicon.ico
+WARNING 2019-07-27 07:02:14,213 basehttp.py log_message basehttp "GET /favicon.ico HTTP/1.1" 404 2146
+INFO 2019-07-27 07:03:32,613 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:03:56,596 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:04:23,811 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:04:27,967 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7588
+INFO 2019-07-27 07:04:28,167 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+INFO 2019-07-27 07:04:32,523 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7588
+INFO 2019-07-27 07:04:32,689 basehttp.py log_message basehttp "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2019-07-27 07:04:32,700 basehttp.py log_message basehttp "GET /static/js/sb-admin-2.min.js HTTP/1.1" 200 1106
+INFO 2019-07-27 07:04:32,703 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 55967
+INFO 2019-07-27 07:04:32,707 basehttp.py log_message basehttp "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 200 2532
+INFO 2019-07-27 07:04:32,725 basehttp.py log_message basehttp "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78635
+INFO 2019-07-27 07:04:32,730 basehttp.py log_message basehttp "GET /static/css/sb-admin-2.min.css HTTP/1.1" 200 197981
+INFO 2019-07-27 07:04:32,737 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 200 4515
+INFO 2019-07-27 07:04:32,744 basehttp.py log_message basehttp "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 200 156721
+INFO 2019-07-27 07:04:32,849 basehttp.py log_message basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 75440
+WARNING 2019-07-27 07:04:33,141 log.py log_response log Not Found: /favicon.ico
+WARNING 2019-07-27 07:04:33,145 basehttp.py log_message basehttp "GET /favicon.ico HTTP/1.1" 404 2146
+INFO 2019-07-27 07:06:02,547 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:06:23,959 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7660
+INFO 2019-07-27 07:07:48,515 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7660
+INFO 2019-07-27 07:07:58,454 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7660
+INFO 2019-07-27 07:09:10,871 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:09:15,137 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:09:17,448 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7660
+INFO 2019-07-27 07:09:17,602 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+INFO 2019-07-27 07:09:17,700 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7660
+INFO 2019-07-27 07:11:32,060 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 07:11:35,057 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:13:38,142 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 07:13:44,738 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:13:48,537 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7660
+INFO 2019-07-27 07:13:48,828 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+INFO 2019-07-27 07:16:53,805 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 7811
+INFO 2019-07-27 07:17:55,813 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:18:00,296 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:18:01,269 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 9357
+WARNING 2019-07-27 07:18:02,719 log.py log_response log Not Found: /favicon.ico
+WARNING 2019-07-27 07:18:02,737 basehttp.py log_message basehttp "GET /favicon.ico HTTP/1.1" 404 2146
+INFO 2019-07-27 07:18:03,461 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 9357
+INFO 2019-07-27 07:18:45,579 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/models.py changed, reloading.
+INFO 2019-07-27 07:18:49,018 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:18:52,857 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 9357
+INFO 2019-07-27 07:18:52,944 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+INFO 2019-07-27 07:21:26,283 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 9381
+INFO 2019-07-27 07:28:30,898 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 9161
+INFO 2019-07-27 07:28:31,102 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+INFO 2019-07-27 07:29:30,742 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 8941
+INFO 2019-07-27 07:31:28,122 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:31:31,717 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:33:59,401 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:34:02,503 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:39:47,988 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:39:51,166 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+ERROR 2019-07-27 07:40:26,966 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "btc_timestamp" does not exist
+LINE 1: ...weighted_price)/2),extract(year from to_timestamp(btc_timest...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 46, in dashboard
+    cursor.execute("select avg((max_weighted_price+min_weighted_price)/2),extract(year from to_timestamp(btc_timestamp)) as year from warehouse_db.public.warehouse_reportbymonth group by year");
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: column "btc_timestamp" does not exist
+LINE 1: ...weighted_price)/2),extract(year from to_timestamp(btc_timest...
+                                                             ^
+
+ERROR 2019-07-27 07:40:35,509 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 105389
+INFO 2019-07-27 07:41:04,124 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:41:07,733 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:41:08,600 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 10801
+INFO 2019-07-27 07:41:08,766 basehttp.py log_message basehttp "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+INFO 2019-07-27 07:41:35,190 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:41:38,552 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+ERROR 2019-07-27 07:41:39,919 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 46, in dashboard
+    cursor.execute("select avg((max_weighted_price+min_weighted_price)/2),extract(year from to_timestamp(month_start_time)) as year from warehouse_reportbymonth order by year group by year");
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+ERROR 2019-07-27 07:41:44,128 log.py log_response log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nati/workspace/tele/tele/warehouse/views.py", line 46, in dashboard
+    cursor.execute("select avg((max_weighted_price+min_weighted_price)/2),extract(year from to_timestamp(month_start_time)) as year from warehouse_reportbymonth order by year group by year");
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/nati/workspace/tele/tele/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 82, in _execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: syntax error at or near "group"
+LINE 1: ...s year from warehouse_reportbymonth order by year group by y...
+                                                             ^
+
+ERROR 2019-07-27 07:41:48,469 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 105311
+ERROR 2019-07-27 07:41:56,922 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 500 105311
+INFO 2019-07-27 07:42:10,317 autoreload.py trigger_reload autoreload /Users/nati/workspace/tele/tele/warehouse/views.py changed, reloading.
+INFO 2019-07-27 07:42:18,494 autoreload.py run_with_reloader autoreload Watching for file changes with StatReloader
+INFO 2019-07-27 07:42:19,284 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 10801
+INFO 2019-07-27 07:42:19,781 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 10801
+INFO 2019-07-27 07:42:20,363 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 10801
+INFO 2019-07-27 07:43:33,928 basehttp.py log_message basehttp "GET /dashboard/ HTTP/1.1" 200 10762
