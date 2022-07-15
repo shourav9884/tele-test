@@ -11,7 +11,7 @@ cycler==0.10.0
 decorator==4.4.0
 defusedxml==0.6.0
 Django==2.2.3
-django-celery-results==1.1.2
+django-celery-results==2.4.0
 django-db==0.0.7
 entrypoints==0.3
 idna==2.8
